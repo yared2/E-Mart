@@ -34,15 +34,6 @@ public class Dispatcher implements WebMvcConfigurer {
 		registry.addResourceHandler("/images/**").addResourceLocations("/resources/images/");
 	}
 
-	// configures the view resolver
-	@Bean
-	public InternalResourceViewResolver jspViewResolver() {
-		InternalResourceViewResolver bean = new InternalResourceViewResolver();
-		bean.setPrefix("/WEB-INF/views/");
-		bean.setSuffix(".jsp");
-		return bean;
-	}
-
 	// configures the externalization of messages
 	@Bean
 	public MessageSource messageSource() {
@@ -102,7 +93,18 @@ public class Dispatcher implements WebMvcConfigurer {
 	public ViewResolver getViewResolver() {
 		UrlBasedViewResolver resolver = new UrlBasedViewResolver();
 		resolver.setViewClass(TilesView.class);
+		resolver.setOrder(0);
 		return resolver;
+	}
+
+	// configures the view resolver
+	@Bean
+	public InternalResourceViewResolver jspViewResolver() {
+		InternalResourceViewResolver bean = new InternalResourceViewResolver();
+		bean.setPrefix("/WEB-INF/views/");
+		bean.setSuffix(".jsp");
+		bean.setOrder(2);
+		return bean;
 	}
 
 }
