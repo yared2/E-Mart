@@ -16,7 +16,9 @@ public class DeploymentDescriptor extends AbstractAnnotationConfigDispatcherServ
 	}
 	
 	protected Class<?>[] getRootConfigClasses() {
-	    return null;
+	    return new Class[] {
+            PersistenceJPAConfig.class
+	};
 	}
 	
 	// Allows Characters [ e.g. Geez] in browser
