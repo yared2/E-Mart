@@ -35,18 +35,7 @@
 	<div id="footer">
 		<tiles:insertAttribute name="footer" />
 	</div> 
-	<%-- <table>
-		<tr>
-			<td colspan="2"><tiles:insertAttribute name="header" /></td>
-		</tr>
-		<tr>
-			<td><tiles:insertAttribute name="menu" /></td>
-			<td><tiles:insertAttribute name="content" /></td>
-		</tr>
-		<tr>
-			<td colspan="2"><tiles:insertAttribute name="footer" /></td>
-		</tr>
-	</table> --%> 
+	 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
