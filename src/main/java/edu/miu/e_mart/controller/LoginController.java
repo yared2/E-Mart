@@ -9,13 +9,13 @@ import edu.miu.e_mart.domain.Credential;
 
 @Controller
 public class LoginController {
-	@RequestMapping(value= {"/login"}, method = RequestMethod.GET)
-	public String getLoginPage(@ModelAttribute("credential")Credential credential) {
+	@RequestMapping(value = { "/login" }, method = RequestMethod.GET)
+	public String getLoginPage(@ModelAttribute("credential") Credential credential) {
 		return "login/login";
 	}
-	
-	@RequestMapping(value= {"/login"}, method = RequestMethod.POST)
-	public String login(@ModelAttribute("credential")Credential credential) {
+
+	@RequestMapping(value = { "/login" }, method = RequestMethod.POST)
+	public String login(@ModelAttribute("credential") Credential credential) {
 		return "products";
 	}
 

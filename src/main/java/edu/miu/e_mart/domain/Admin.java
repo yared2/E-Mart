@@ -11,15 +11,15 @@ public class Admin {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long customerId;
-	//@NotEmpty(message = "{ }")
+	// @NotEmpty(message = "{ }")
 	private String firstName;
-	//@NotEmpty(message = "{ }")
+	// @NotEmpty(message = "{ }")
 	private String lastName;
-	//@Email(message="{ }")
+	// @Email(message="{ }")
 	private String email;
-	
-	public Admin(){
-		
+
+	public Admin() {
+
 	}
 
 	public Admin(Long customerId, String firstName, String lastName, String email) {
@@ -61,6 +61,5 @@ public class Admin {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
 
 }

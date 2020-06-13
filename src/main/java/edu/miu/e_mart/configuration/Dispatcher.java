@@ -79,6 +79,7 @@ public class Dispatcher implements WebMvcConfigurer {
 
 		return resolver;
 	}
+
 	// configures the tiles
 	@Bean
 	public TilesConfigurer tilesConfigurer() {
@@ -88,6 +89,7 @@ public class Dispatcher implements WebMvcConfigurer {
 		return tiles;
 
 	}
+
 	// configures the view resolver
 	@Bean
 	public ViewResolver getViewResolver() {
