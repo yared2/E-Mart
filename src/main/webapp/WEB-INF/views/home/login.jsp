@@ -1,12 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html>
 <html>
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,22 +17,28 @@
 <style type="text/css">
 @import url('<c:url value="/css/style.css"/>');
 </style>
-<title><tiles:getAsString name="title" /></title>
+<title>Login Page</title>
 </head>
 <body>
-	<div>
-		<tiles:insertAttribute name="header" />
+	<div class="container">
+		<form action="login" method="post" >
+			<fieldset>
+				<legend>Log in</legend>
+				<div class="form-group">
+					<label for="username">Username</label> <input
+						type="text" class="form-control" id="username" placeholder="Enter Username"> <small
+						id="username" class="form-text text-muted">We'll never
+						share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label> <input
+						type="password" class="form-control" id="password"
+						placeholder="Password">
+				</div>
+				<button type="submit" class="btn btn-primary">Login</button>
+			</fieldset>
+		</form>
 	</div>
-	<div id="menu">
-		<tiles:insertAttribute name="menu" />
-	</div>
-	<div id="content">
-		<tiles:insertAttribute name="content" />
-	</div>
-	<div id="footer">
-		<tiles:insertAttribute name="footer" />
-	</div> 
-	 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>

@@ -1,6 +1,7 @@
 package edu.miu.e_mart.domain;
 
 public class Credential {
+
 	private Integer credentialId;
 	private String username;
 	private String password;
@@ -32,5 +33,5 @@ public class Credential {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 }

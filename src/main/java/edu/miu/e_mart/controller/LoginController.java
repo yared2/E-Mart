@@ -2,11 +2,21 @@ package edu.miu.e_mart.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import edu.miu.e_mart.domain.Credential;
 
 @Controller
 public class LoginController {
-	public String displayLogin(@ModelAttribute("credential")Credential credential) {
-		
+	@RequestMapping(value= {"/login"}, method = RequestMethod.GET)
+	public String diplayLogin(@ModelAttribute("credential")Credential credential) {
+		return "home/login";
+	}
+	
+	@RequestMapping(value= {"/login"}, method = RequestMethod.POST)
+	public String login(@ModelAttribute("credential")Credential credential) {
+		return "products";
 	}
 
 }
