@@ -9,7 +9,7 @@ import javax.validation.constraints.Email;
 @Entity
 public class Admin {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long customerId;
 	//@NotEmpty(message = "{ }")
 	private String firstName;
