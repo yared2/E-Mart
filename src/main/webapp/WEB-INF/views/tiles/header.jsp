@@ -11,7 +11,8 @@
 		<ul class="navbar-nav" style="float: right;">
 			<li class="nav-item"><a class="nav-link"
 				href="<spring:url value="/customer" />">Sign up</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+			<li class="nav-item"><a class="nav-link"
+				href="<spring:url value="/login" />">Login</a></li>
 		</ul>
 		&nbsp;&nbsp;&nbsp;&nbsp;
 		<form method="get" action="#">

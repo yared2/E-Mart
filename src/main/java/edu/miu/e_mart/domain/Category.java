@@ -20,7 +20,6 @@ public class Category {
 
 
 	public Category(Long categoryId, String categoryName) {
-		super();
 		this.categoryId = categoryId;
 		this.categoryName = categoryName;
 	}
