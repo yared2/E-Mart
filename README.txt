@@ -6,3 +6,4 @@ Disallows firstName
 Uses Java Config
 
 NOTE: ALSO uses Spring Boot BOM instead of Spring.io BOM [ end of life April 2019]
+Test
