@@ -1,7 +1,8 @@
 package edu.miu.e_mart.service.definition;
 
-import edu.miu.e_mart.repository.ICustomerRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public interface ICustomerService {
 
 }
