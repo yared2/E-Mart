@@ -10,16 +10,15 @@ public class Category {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long categoryId;
-
+	
 	// @NotEmpty(message = "{ }")
 	private String categoryName;
-
+	
 	public Category() {
 
 	}
-
-	public Category(Long categoryId, String categoryName) {
-		this.categoryId = categoryId;
+	public Category(String categoryName) {
+	
 		this.categoryName = categoryName;
 	}
 
